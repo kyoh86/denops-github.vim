@@ -1,21 +1,17 @@
 {
-  "name": "denops-boilerplate.vim",
+  "name": "denops-github.vim",
   "version": "0.0.0",
   "exports": {
-    "./dummy_test.ts": "./dummy_test.ts",
-    "./init.ts": "./init.ts",
-    "./denops/boilerplate/main.ts": "./denops/boilerplate/main.ts",
-    "./denops/boilerplate/mod.ts": "./denops/boilerplate/mod.ts",
-    "./denops/boilerplate/types.ts": "./denops/boilerplate/types.ts"
+    "./denops/github/main.ts": "./denops/github/main.ts"
   },
-  "description": "Superpractilisticexpermientocious",
+  "imports": {
+  },
+  "description": "A plugin to manipulate GitHub from Vim/Neovim via denops.vim",
   "tasks": {
     "update": "deno run --allow-env --allow-read --allow-write --allow-net --allow-run=git,deno jsr:@molt/cli --write ./**/*.ts",
     "fmt": "deno fmt",
     "check": "deno check ./**/*.ts",
     "lint": "deno lint",
     "test": "deno test --check --permit-no-files --allow-env --allow-run --allow-net=127.0.0.1:0 --allow-read"
-  },
-  "imports": {
   }
 }

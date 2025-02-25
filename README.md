@@ -1,17 +1,13 @@
-# denops-boilerplate.vim
+# denops-github.vim
 
-Superpractilisticexpermientocious.
+A plugin to manipulate GitHub from Vim/Neovim via denops.vim
 
-## Usage
-
-1. Fork this repository to `denops-xxx.vim`
-1. Call `init.ts --name hogehoge --description fugafuga` to replace names in the
-   repository
-1. Delete this section from README.md
+This plugin is still under development and is not stable at all.
+It is not recommended to use it.
 
 ## doc
 
-[./doc/boilerplate.txt](./doc/boilerplate.txt)
+[./doc/github.txt](./doc/github.txt)
 
 # License
 

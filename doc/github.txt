@@ -1,0 +1,68 @@
+*github.txt* A plugin to manipulate GitHub from Vim/Neovim via denops.vim
+                                                  *github* *denops-github.txt*
+
+Author: kyoh86 <me@kyoh86.dev>
+License: MIT License
+
+
+==============================================================================
+                                                             *github-contents*
+Contents ~
+
+Install           |github-install|
+Setup             |github-setup|
+Function          |github-function|
+Commands          |github-commands|
+Keymaps           |github-keymaps|
+Denops commands   |github-denops-commands|
+
+
+==============================================================================
+                                                              *github-install*
+Install ~
+
+You can install this plugin with your favorite plugin manager.
+You need to install |denops.vim| as a dependency.
+
+* vim-denops/denops.vim https://github.com/vim-denops/denops.vim
+
+
+==============================================================================
+                                                                *github-setup*
+Setup ~
+
+This plugin provides a function to login to the GitHub. >vim
+
+    :call denops#github#setup#login()
+<
+It shows a 8-digit token, open the browser and ask you to login to the GitHub.
+After you logged in, you can input the token to the prompt.
+Then, you can select organizations to install GitHub OAuth App to.
+
+
+==============================================================================
+                                                             *github-function*
+Function ~
+
+                                                 *denops#github#setup#login()*
+denops#github#setup#login()
+
+    TODO
+
+
+==============================================================================
+                                                             *github-commands*
+Commands ~
+
+    TODO
+
+
+==============================================================================
+                                                              *github-keymaps*
+Keymaps ~
+
+    TODO
+
+
+==============================================================================
+" vim:tw=78:nosi:sts=4:ts=4:sw=4:et:ft=help:norl:
