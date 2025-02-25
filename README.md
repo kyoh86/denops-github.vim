@@ -2,8 +2,8 @@
 
 A plugin to manipulate GitHub from Vim/Neovim via denops.vim
 
-This plugin is still under development and is not stable at all.
-It is not recommended to use it.
+This plugin is still under development and is not stable at all. It is not
+recommended to use it.
 
 ## doc
 
