@@ -1,5 +1,5 @@
 import type { Denops } from "jsr:@denops/std@~7.5.0";
-import type { Buffer, LoadContext } from "jsr:@kyoh86/denops-router@0.4.3";
+import type { Buffer, LoadContext } from "jsr:@kyoh86/denops-router@0.5.0";
 import { getClient } from "../client.ts";
 import * as autocmd from "jsr:@denops/std@~7.5.0/autocmd";
 import * as buffer from "jsr:@denops/std@~7.5.0/buffer";
