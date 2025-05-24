@@ -1,24 +1,24 @@
 import { restoreAuthentication, storeAuthentication } from "./auth.ts";
-import { Octokit as OctokitCore } from "npm:@octokit/core@6.1.5";
+import { Octokit as OctokitCore } from "npm:@octokit/core@7.0.2";
 import {
   type Api,
   restEndpointMethods,
-} from "npm:@octokit/plugin-rest-endpoint-methods@14.0.0";
+} from "npm:@octokit/plugin-rest-endpoint-methods@15.0.0";
 import {
   type PaginateInterface,
   paginateRest,
-} from "npm:@octokit/plugin-paginate-rest@12.0.0";
+} from "npm:@octokit/plugin-paginate-rest@13.0.0";
 import {
   paginateGraphQL,
   type paginateGraphQLInterface,
-} from "npm:@octokit/plugin-paginate-graphql@5.2.4";
+} from "npm:@octokit/plugin-paginate-graphql@6.0.0";
 
 export const Octokit = OctokitCore
   .plugin(restEndpointMethods)
   .plugin(paginateRest)
   .plugin(paginateGraphQL);
-import { createOAuthDeviceAuth } from "npm:@octokit/auth-oauth-device@7.1.5";
-import { systemopen } from "jsr:@lambdalisue/systemopen@~1.0.0";
+import { createOAuthDeviceAuth } from "npm:@octokit/auth-oauth-device@8.0.1";
+import { systemopen } from "jsr:@lambdalisue/systemopen@1.0.0";
 
 type Verification = {
   device_code: string;
