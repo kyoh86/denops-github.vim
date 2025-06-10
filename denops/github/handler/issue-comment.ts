@@ -1,9 +1,9 @@
-import type { Denops } from "jsr:@denops/std@7.5.0";
+import type { Denops } from "jsr:@denops/std@7.5.1";
 import type { Buffer, LoadContext } from "jsr:@kyoh86/denops-router@0.5.0";
-import * as option from "jsr:@denops/std@7.5.0/option";
-import * as buffer from "jsr:@denops/std@7.5.0/buffer";
-import * as autocmd from "jsr:@denops/std@7.5.0/autocmd";
-import { getbufline } from "jsr:@denops/std@7.5.0/function";
+import * as option from "jsr:@denops/std@7.5.1/option";
+import * as buffer from "jsr:@denops/std@7.5.1/buffer";
+import * as autocmd from "jsr:@denops/std@7.5.1/autocmd";
+import { getbufline } from "jsr:@denops/std@7.5.1/function";
 
 import { getClient } from "../client.ts";
 import { getIssueIdentifier } from "./issue-buf.ts";

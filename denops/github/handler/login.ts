@@ -1,6 +1,6 @@
-import type { Denops } from "jsr:@denops/std@7.5.0";
-import { batch } from "jsr:@denops/std@7.5.0/batch";
-import { echo } from "jsr:@denops/std@7.5.0/helper";
+import type { Denops } from "jsr:@denops/std@7.5.1";
+import { batch } from "jsr:@denops/std@7.5.1/batch";
+import { echo } from "jsr:@denops/std@7.5.1/helper";
 import { systemopen } from "jsr:@lambdalisue/systemopen@1.0.0";
 
 import {
