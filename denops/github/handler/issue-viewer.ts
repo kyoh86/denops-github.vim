@@ -1,12 +1,12 @@
-import type { Denops } from "jsr:@denops/std@7.5.1";
+import type { Denops } from "jsr:@denops/std@7.6.0";
 import type {
   Buffer,
   LoadContext,
   Router,
 } from "jsr:@kyoh86/denops-router@0.5.0";
-import * as buffer from "jsr:@denops/std@7.5.1/buffer";
-import * as option from "jsr:@denops/std@7.5.1/option";
-import * as autocmd from "jsr:@denops/std@7.5.1/autocmd";
+import * as buffer from "jsr:@denops/std@7.6.0/buffer";
+import * as option from "jsr:@denops/std@7.6.0/option";
+import * as autocmd from "jsr:@denops/std@7.6.0/autocmd";
 import {
   format as formatDateTime,
   parse as parseDateTime,
@@ -16,7 +16,7 @@ import {
   getbufvar,
   getcurpos,
   setbufvar,
-} from "jsr:@denops/std@7.5.1/function";
+} from "jsr:@denops/std@7.6.0/function";
 import { ensure, is } from "jsr:@core/unknownutil@4";
 import { systemopen } from "jsr:@lambdalisue/systemopen@1.0.0";
 
