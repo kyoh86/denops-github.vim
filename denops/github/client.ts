@@ -7,7 +7,7 @@ import {
 import {
   type PaginateInterface,
   paginateRest,
-} from "npm:@octokit/plugin-paginate-rest@13.1.0";
+} from "npm:@octokit/plugin-paginate-rest@13.1.1";
 import {
   paginateGraphQL,
   type paginateGraphQLInterface,
