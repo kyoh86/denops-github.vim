@@ -1,5 +1,5 @@
 import { restoreAuthentication, storeAuthentication } from "./auth.ts";
-import { Octokit as OctokitCore } from "npm:@octokit/core@7.0.2";
+import { Octokit as OctokitCore } from "npm:@octokit/core@7.0.3";
 import {
   type Api,
   restEndpointMethods,
@@ -7,7 +7,7 @@ import {
 import {
   type PaginateInterface,
   paginateRest,
-} from "npm:@octokit/plugin-paginate-rest@13.1.0";
+} from "npm:@octokit/plugin-paginate-rest@13.1.1";
 import {
   paginateGraphQL,
   type paginateGraphQLInterface,
