@@ -28,7 +28,7 @@
   },
   "description": "A plugin to manipulate GitHub from Vim/Neovim via denops.vim",
   "tasks": {
-    "update": "deno run --allow-env --allow-read --allow-write --allow-net --allow-run=git,deno jsr:@molt/cli --write ./**/*.ts",
+    "update": "deno outdated --update",
     "fmt": "deno fmt",
     "check": "deno check --allow-import ./**/*.ts",
     "lint": "deno lint",
