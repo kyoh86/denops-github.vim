@@ -1,13 +1,9 @@
-import type { Denops } from "jsr:@denops/std@7.6.0";
-import type {
-  Buffer,
-  LoadContext,
-  Router,
-} from "jsr:@kyoh86/denops-router@0.5.0";
-import * as option from "jsr:@denops/std@7.6.0/option";
-import * as buffer from "jsr:@denops/std@7.6.0/buffer";
-import * as autocmd from "jsr:@denops/std@7.6.0/autocmd";
-import { getbufline } from "jsr:@denops/std@7.6.0/function";
+import type { Denops } from "@denops/std";
+import type { Buffer, LoadContext, Router } from "@kyoh86/denops-router";
+import * as option from "@denops/std/option";
+import * as buffer from "@denops/std/buffer";
+import * as autocmd from "@denops/std/autocmd";
+import { getbufline } from "@denops/std/function";
 
 import { getClient } from "../client.ts";
 import { getIssueIdentifier } from "./issue-buf.ts";

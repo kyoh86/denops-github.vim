@@ -1,5 +1,5 @@
-import { ensure, is } from "jsr:@core/unknownutil@^4.3.0";
-import type { Buffer } from "jsr:@kyoh86/denops-router@0.5.0";
+import { ensure, is } from "@core/unknownutil";
+import type { Buffer } from "@kyoh86/denops-router";
 
 export function getIssueIdentifier(buf: Buffer) {
   const owner = ensure(buf.bufname.params?.owner, is.String, {

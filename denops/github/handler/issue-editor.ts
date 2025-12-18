@@ -1,10 +1,10 @@
-import type { Denops } from "jsr:@denops/std@7.6.0";
-import type { Buffer, LoadContext } from "jsr:@kyoh86/denops-router@0.5.0";
+import type { Denops } from "@denops/std";
+import type { Buffer, LoadContext } from "@kyoh86/denops-router";
 import { getClient } from "../client.ts";
-import * as autocmd from "jsr:@denops/std@7.6.0/autocmd";
-import * as buffer from "jsr:@denops/std@7.6.0/buffer";
-import * as option from "jsr:@denops/std@7.6.0/option";
-import { getbufline } from "jsr:@denops/std@7.6.0/function";
+import * as autocmd from "@denops/std/autocmd";
+import * as buffer from "@denops/std/buffer";
+import * as option from "@denops/std/option";
+import { getbufline } from "@denops/std/function";
 import { getIssueIdentifier } from "./issue-buf.ts";
 
 export async function loadIssueEditor(

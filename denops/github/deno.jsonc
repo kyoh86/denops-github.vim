@@ -1,12 +1,4 @@
 {
-  "name": "denops-github.vim",
-  "version": "0.0.0",
-  "exports": {
-    "./denops/github/main.ts": "./denops/github/main.ts"
-  },
-  "workspace": [
-    "./denops/github"
-  ],
   "imports": {
     "@core/unknownutil": "jsr:@core/unknownutil@^4.3.0",
     "@denops/std": "jsr:@denops/std@^8.2.0",
@@ -25,13 +17,5 @@
     "xdg": "https://deno.land/x/xdg@v10.6.0/src/mod.deno.ts",
     "@oktokit/auth-oauth-device": "https://esm.sh/@octokit/auth-oauth-device@8.0.1",
     "@oktokit/auth-oauth-device-types": "https://esm.sh/@octokit/auth-oauth-device@8.0.1/dist-types/types.d.ts"
-  },
-  "description": "A plugin to manipulate GitHub from Vim/Neovim via denops.vim",
-  "tasks": {
-    "update": "deno run --allow-env --allow-read --allow-write --allow-net --allow-run=git,deno jsr:@molt/cli --write ./**/*.ts",
-    "fmt": "deno fmt",
-    "check": "deno check --allow-import ./**/*.ts",
-    "lint": "deno lint",
-    "test": "deno test --check --permit-no-files --allow-env=DENOPS_TEST_CONNECT_TIMEOUT,DENOPS_TEST_DENOPS_PATH,DENOPS_TEST_VERBOSE,DENOPS_TEST_VIM_EXECUTABLE,DENOPS_TEST_NVIM_EXECUTABLE,MSGPACKR_NATIVE_ACCELERATION_DISABLED --allow-run --allow-net=127.0.0.1:0 --allow-read"
   }
 }

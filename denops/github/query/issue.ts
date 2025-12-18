@@ -1,4 +1,4 @@
-import { ensure, is } from "jsr:@core/unknownutil@4.3";
+import { ensure, is } from "@core/unknownutil";
 import type { Client } from "../client.ts";
 
 export interface Root {

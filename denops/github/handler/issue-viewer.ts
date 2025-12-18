@@ -1,24 +1,15 @@
-import type { Denops } from "jsr:@denops/std@7.6.0";
-import type {
-  Buffer,
-  LoadContext,
-  Router,
-} from "jsr:@kyoh86/denops-router@0.5.0";
-import * as buffer from "jsr:@denops/std@7.6.0/buffer";
-import * as option from "jsr:@denops/std@7.6.0/option";
-import * as autocmd from "jsr:@denops/std@7.6.0/autocmd";
+import type { Denops } from "@denops/std";
+import type { Buffer, LoadContext, Router } from "@kyoh86/denops-router";
+import * as buffer from "@denops/std/buffer";
+import * as option from "@denops/std/option";
+import * as autocmd from "@denops/std/autocmd";
 import {
   format as formatDateTime,
   parse as parseDateTime,
-} from "jsr:@std/datetime@^0.225.2";
-import {
-  bufnr,
-  getbufvar,
-  getcurpos,
-  setbufvar,
-} from "jsr:@denops/std@7.6.0/function";
-import { ensure, is } from "jsr:@core/unknownutil@4";
-import { systemopen } from "jsr:@lambdalisue/systemopen@1.0.0";
+} from "@std/datetime";
+import { bufnr, getbufvar, getcurpos, setbufvar } from "@denops/std/function";
+import { ensure, is } from "@core/unknownutil";
+import { systemopen } from "@lambdalisue/systemopen";
 
 import { getClient } from "../client.ts";
 import { getIssueIdentifier } from "./issue-buf.ts";
