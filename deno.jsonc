@@ -22,10 +22,9 @@
     "@std/datetime": "jsr:@std/datetime@^0.225.5",
     "@std/fs": "jsr:@std/fs@^1.0.20",
     "@std/path": "jsr:@std/path@^1.1.3",
-    "@404wolf/xdg-portable": "jsr:@404wolf/xdg-portable@^0.1.0",
-    "@oktokit/auth-oauth-device": "https://esm.sh/@octokit/auth-oauth-device@8.0.1",
-    "@oktokit/auth-oauth-device-types": "https://esm.sh/@octokit/auth-oauth-device@8.0.1/dist-types/types.d.ts"
+    "@404wolf/xdg-portable": "jsr:@404wolf/xdg-portable@^0.1.0"
   },
+  "nodeModulesDir": "auto",
   "description": "A plugin to manipulate GitHub from Vim/Neovim via denops.vim",
   "tasks": {
     "update": "deno outdated --update",
@@ -33,5 +32,6 @@
     "check": "deno check --allow-import ./**/*.ts",
     "lint": "deno lint",
     "test": "deno test --check --permit-no-files --allow-env=DENOPS_TEST_CONNECT_TIMEOUT,DENOPS_TEST_DENOPS_PATH,DENOPS_TEST_VERBOSE,DENOPS_TEST_VIM_EXECUTABLE,DENOPS_TEST_NVIM_EXECUTABLE,MSGPACKR_NATIVE_ACCELERATION_DISABLED --allow-run --allow-net=127.0.0.1:0 --allow-read"
-  }
+  },
+  "allowScripts": ["npm:msgpackr-extract@3.0.3"]
 }

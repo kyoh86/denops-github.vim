@@ -3,8 +3,11 @@ import { batch } from "@denops/std/batch";
 import { echo } from "@denops/std/helper";
 import { systemopen } from "@lambdalisue/systemopen";
 
-import { createOAuthDeviceAuth } from "@octokit/auth-oauth-device";
-import type { OnVerificationCallback } from "./octokit-types.ts";
+import {
+  createOAuthDeviceAuth,
+  type GitHubAppStrategyOptions,
+} from "@octokit/auth-oauth-device";
+type OnVerificationCallback = GitHubAppStrategyOptions["onVerification"];
 
 export async function login(denops: Denops, clientID: string) {
   const options: {
@@ -21,8 +24,6 @@ export async function login(denops: Denops, clientID: string) {
         );
       });
       systemopen(v.verification_uri);
-      // TODO: If it does not inistalled, kyoh86-dotfiles should be installed.
-      // https://github.com/settings/apps/kyoh86-dotfiles/installations
     },
   };
 
