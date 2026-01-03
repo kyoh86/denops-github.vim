@@ -1,8 +1,17 @@
+// $schema: https://raw.githubusercontent.com/denoland/deno/refs/heads/main/cli/schemas/config-file.v1.json
 {
   "name": "denops-github.vim",
   "version": "0.0.0",
+  "description": "A plugin to manipulate GitHub from Vim/Neovim via denops.vim",
   "exports": {
     "./denops/github/main.ts": "./denops/github/main.ts"
+  },
+  "fmt": { "include": ["./**/*.ts", "deno.jsonc"] },
+  "lint": { "include": ["./**/*.ts", "deno.jsonc"] },
+  "test": { "include": ["./**/*_test.ts"] },
+  "tasks": {
+    "update": "deno outdated --update",
+    "test": "deno test --check --permit-no-files --allow-env=DENOPS_TEST_CONNECT_TIMEOUT,DENOPS_TEST_DENOPS_PATH,DENOPS_TEST_VERBOSE,DENOPS_TEST_VIM_EXECUTABLE,DENOPS_TEST_NVIM_EXECUTABLE,MSGPACKR_NATIVE_ACCELERATION_DISABLED --allow-run --allow-net=127.0.0.1:0 --allow-read"
   },
   "workspace": [
     "./denops/github"
@@ -25,13 +34,5 @@
     "@404wolf/xdg-portable": "jsr:@404wolf/xdg-portable@^0.1.0"
   },
   "nodeModulesDir": "auto",
-  "description": "A plugin to manipulate GitHub from Vim/Neovim via denops.vim",
-  "tasks": {
-    "update": "deno outdated --update",
-    "fmt": "deno fmt",
-    "check": "deno check --allow-import ./**/*.ts",
-    "lint": "deno lint",
-    "test": "deno test --check --permit-no-files --allow-env=DENOPS_TEST_CONNECT_TIMEOUT,DENOPS_TEST_DENOPS_PATH,DENOPS_TEST_VERBOSE,DENOPS_TEST_VIM_EXECUTABLE,DENOPS_TEST_NVIM_EXECUTABLE,MSGPACKR_NATIVE_ACCELERATION_DISABLED --allow-run --allow-net=127.0.0.1:0 --allow-read"
-  },
   "allowScripts": ["npm:msgpackr-extract@3.0.3"]
 }
