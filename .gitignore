@@ -1,2 +1,5 @@
 deno.lock
 node_modules/
+
+/doc/tags
+/doc/tags-??
